@@ -1,0 +1,71 @@
+==============================================================================
+TEAMCAL NEO BASIC UPGRADE INFO
+==============================================================================
+
+------------------------------------------------------------------------------
+[2.3.1] -> [2.3.2]
+
+1. Backup your current files and database!
+
+2. Download the new release and overwrite all files.
+ 
+3. Edit config/config.app.php and change line 39 to:
+   define('APP_INSTALLED',"1");
+
+4. Edit config/config.db.php and update your database settings from your backup.
+   
+5. Delete file installation.php in the root directory
+
+
+------------------------------------------------------------------------------
+[2.3.0] -> [2.3.1]
+
+1. Backup your current files and database!
+
+2. Download the new release and overwrite all files.
+ 
+3. Edit config/config.app.php and change line 39 to:
+   define('APP_INSTALLED',"1");
+
+4. Edit config/config.db.php and update your database settings from your backup.
+   
+5. Delete file installation.php in the root directory
+
+
+------------------------------------------------------------------------------
+[2.2.3] -> [2.3.0]
+
+ATTENTION !
+TeamCal Neo Basic is new. It is a separate, free but restricted version of the
+new TeamCal Neo 3. Read all about it here:
+https://www.lewe.com/teamcal-neo
+
+TeamCal Neo Basic has the following restrictions:
+- 20 user accounts
+- 10 absence types
+- No statistics
+- No messaging
+- No attachments
+
+If your current instance exceeds these restrictions you need to upgrade to
+TeamCal Neo 3 which is not free anymore.
+Only update to TeamCal Neo 3 after you obtained a valid license. You can then
+activate and register your license from within your installation.
+This process is documented here:
+https://support.lewe.com/docs/teamcal-neo-manual/administration/license/
+
+If TeamCal Neo Basic covers your current requirements, you can update to it
+as follows:
+
+1. Backup your current files and database!
+
+2. Download the new release and overwrite all files.
+ 
+3. Edit config/config.app.php and change line 39 to:
+   define('APP_INSTALLED',"1");
+
+4. Edit config/config.db.php and update your database settings from your backup.
+   
+5. Delete file installation.php in the root directory
+
+

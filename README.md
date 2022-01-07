@@ -1,4 +1,4 @@
-![logo-128.png](https://github.com/glewe/teamcal-neo-basic/raw/master/src/images/icons/logo-128.png)
+![logo-128.png](https://github.com/glewe/teamcal-neo-basic/raw/master/src/images/icons/logo-80.png)
 # TeamCal Neo Basic 
 [![PHP](https://img.shields.io/badge/Language-PHP-8892BF.svg)](https://www.php.net/)
 ![Support](https://img.shields.io/badge/Support-Yes-green.svg)

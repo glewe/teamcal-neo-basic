@@ -152,7 +152,7 @@ define('LDAP_TLS', 0); // To avoid "Undefined index: LDAP_TLS" error message for
  * !Do not change anything below this line. It is protected by the license agreement!
  */
 define('APP_NAME', "TeamCal Neo Basic");
-define('APP_VER', "2.3.3");
+define('APP_VER', "2.3.4");
 define('APP_DATE', "2022-08-04");
 define('APP_YEAR', "2014-" . date('Y'));
 define('APP_AUTHOR', "George Lewe");

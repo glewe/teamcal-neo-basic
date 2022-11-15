@@ -35,10 +35,8 @@ if (!defined('VALID_ROOT')) exit('');
                         <strong><?= $LANG['about_version'] ?>:</strong>&nbsp;&nbsp;<?= APP_VER ?><span id="versioncompare"></span><br>
                         <strong><?= $LANG['about_copyright'] ?>:</strong>&nbsp;&nbsp;&copy;&nbsp;<?= APP_YEAR ?> by <a class="about" href="http://www.lewe.com/" target="_blank"><?= APP_AUTHOR ?></a><br>
                         <strong><?= $LANG['about_license'] ?>:</strong>&nbsp;&nbsp;<a class="about" href="https://lewe.gitbook.io/teamcal-neo/readme/teamcal-neo-license" target="_blank"><?= $LANG['license'] ?></a><br>
-                        <strong><?= $LANG['about_forum'] ?>:</strong>&nbsp;&nbsp;<a class="about" href="https://forum.lewe.com/" target="_blank">Lewe.com Forum</a><br>
-                        <strong><?= $LANG['about_tracker'] ?>:</strong>&nbsp;&nbsp;<a class="about" href="https://github.com/glewe/tcneobasic/issues" target="_blank">TeamCal Neo Basic Issue Tracker</a><br>
+                        <strong><?= $LANG['about_tracker'] ?>:</strong>&nbsp;&nbsp;<a class="about" href="https://georgelewe.atlassian.net/servicedesk/customer/portal/5" target="_blank">Lewe Service Desk</a><br>
                         <strong><?= $LANG['about_documentation'] ?>:</strong>&nbsp;&nbsp;<a class="about" href="https://lewe.gitbook.io/teamcal-neo/" target="_blank">TeamCal Neo User Manual</a><br>
-                        <strong><?= $LANG['about_vote'] ?>:</strong>&nbsp;&nbsp;<?= $LANG['about_vote_comment'] ?><br><br>
                     </p>
                     <h3><?= $LANG['about_credits'] ?>:</h3>
                     <ul>

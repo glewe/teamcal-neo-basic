@@ -3,7 +3,7 @@
  * Index
  *
  * @author George Lewe <george@lewe.com>
- * @copyright Copyright (c) 2014-2020 by George Lewe
+ * @copyright Copyright (c) 2014-2022 by George Lewe
  * @link https://www.lewe.com
  *
  * @package TeamCal Neo Basic
@@ -356,4 +356,3 @@ else
    $alertData['help'] = $LANG['alert_controller_not_found_help'];
    require (WEBSITE_ROOT . '/controller/alert.php');
 }
-?>

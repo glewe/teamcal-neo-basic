@@ -68,7 +68,7 @@ TeamCal Neo 3 which is not free anymore.
 Only update to TeamCal Neo 3 after you obtained a valid license. You can then
 activate and register your license from within your installation.
 This process is documented here:
-https://support.lewe.com/docs/teamcal-neo-manual/administration/license/
+https://lewe.gitbook.io/teamcal-neo/readme/teamcal-neo-license
 
 If TeamCal Neo Basic covers your current requirements, you can update to it
 as follows:

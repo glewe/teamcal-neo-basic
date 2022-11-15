@@ -4,7 +4,7 @@ if (!defined('VALID_ROOT')) exit('');
  * English Framework Strings
  *
  * @author George Lewe <george@lewe.com>
- * @copyright Copyright (c) 2014-2020 by George Lewe
+ * @copyright Copyright (c) 2014-2022 by George Lewe
  * @link https://www.lewe.com
  *
  * @package TeamCal Neo Basic
@@ -51,33 +51,33 @@ $LANG['grey'] = 'Grey';
 $LANG['group'] = 'Group';
 $LANG['license'] = 'TeamCal Neo License';
 $LANG['magenta'] = 'Magenta';
-$LANG['monthnames'] = array (
-   1 => "January",
-   "February",
-   "March",
-   "April",
-   "May",
-   "June",
-   "July",
-   "August",
-   "September",
-   "October",
-   "November",
-   "December" 
+$LANG['monthnames'] = array(
+    1 => "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
 );
-$LANG['monthShort'] = array (
-   1 => "Jan",
-   "Feb",
-   "Mar",
-   "Apr",
-   "May",
-   "Jun",
-   "Jul",
-   "Aug",
-   "Sep",
-   "Oct",
-   "Nov",
-   "Dec" 
+$LANG['monthShort'] = array(
+    1 => "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec"
 );
 $LANG['name'] = 'Name';
 $LANG['none'] = 'None';
@@ -109,23 +109,23 @@ $LANG['today'] = 'Today';
 $LANG['total'] = 'Total';
 $LANG['type'] = 'Type';
 $LANG['user'] = 'User';
-$LANG['weekdayShort'] = array (
-   1 => "Mo",
-   "Tu",
-   "We",
-   "Th",
-   "Fr",
-   "Sa",
-   "Su" 
+$LANG['weekdayShort'] = array(
+    1 => "Mo",
+    "Tu",
+    "We",
+    "Th",
+    "Fr",
+    "Sa",
+    "Su"
 );
-$LANG['weekdayLong'] = array (
-   1 => "Monday",
-   "Tuesday",
-   "Wednesday",
-   "Thursday",
-   "Friday",
-   "Saturday",
-   "Sunday" 
+$LANG['weekdayLong'] = array(
+    1 => "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
 );
 $LANG['yellow'] = 'Yellow';
 
@@ -214,7 +214,7 @@ $LANG['alert_maintenance_text'] = 'The site is currently set to "Under Maintenan
 $LANG['alert_maintenance_help'] = 'As an administrator you can set the site back to active under Administration -> Framework Configuration -> System.';
 
 $LANG['alert_max_user_subject'] = 'Maximum User Accounts Reached';
-$LANG['alert_max_user_text'] = 'You have reached the maximum amount of users ('.APP_MUSR.') for TeamCal Neo Basic.';
+$LANG['alert_max_user_text'] = 'You have reached the maximum amount of users (' . APP_MUSR . ') for TeamCal Neo Basic.';
 $LANG['alert_max_user_help'] = 'Upgrade to the Pro version to get unlimited absence types.';
 
 $LANG['alert_no_data_subject'] = 'Invalid Data';
@@ -367,7 +367,7 @@ $LANG['config_activateMessages_comment'] = 'This option will activate the Messag
 $LANG['config_adminApproval'] = 'Require Admin Approval';
 $LANG['config_adminApproval_comment'] = 'The administrator will receive an e-mail about each user self-registration. He manually needs to confirm the account.';
 $LANG['config_allowRegistration'] = 'Allow User Self-Registration';
-$LANG['config_allowRegistration_comment'] = 'Allow users to self-register their account. A menu entry will be available in the '.$appTitle.' menu.';
+$LANG['config_allowRegistration_comment'] = 'Allow users to self-register their account. A menu entry will be available in the ' . $appTitle . ' menu.';
 $LANG['config_allowUserTheme'] = 'Allow User Theme';
 $LANG['config_allowUserTheme_comment'] = 'Check whether you want each user to be able to select his individual theme.';
 $LANG['config_appDescription'] = 'HTML Description';
@@ -517,7 +517,7 @@ $LANG['config_userCustom4_comment'] = 'Enter the caption of this custom user fie
 $LANG['config_userCustom5'] = 'User Custom Field 5 Caption';
 $LANG['config_userCustom5_comment'] = 'Enter the caption of this custom user field. The caption will be shown in the profile dialog.';
 $LANG['config_userManual'] = 'User Manual';
-$LANG['config_userManual_comment'] = $appTitle . '\'s user manual is maintained in English and is available at the <a href="https://support.lewe.com/docs/teamcal-neo-manual/" target="_blank">Lewe.com Support site</a>.
+$LANG['config_userManual_comment'] = $appTitle . '\'s user manual is maintained in English and is available at the <a href="https://lewe.gitbook.io/teamcal-neo/" target="_blank">Lewe.com Gitbook site</a>.
       If you have written your own manual, enter the link here. It will be displayed in the Help menu as long as the field is not empty.';
 $LANG['config_versionCompare'] = 'Version Compare';
 $LANG['config_versionCompare_comment'] = 'With this option enabled, TeamCal Neo\'s About page will compare the running version with the newest version available. In order to do so, 
@@ -652,40 +652,40 @@ $LANG['home_title'] = 'Welcome to ' . $appTitle;
 // Imprint
 // You can add more arrays here in order to display them on the Imprint page
 //
-$LANG['imprint'] = array ( 
-   array (
-      'title' => 'Author',
-      'text' => '<i class="fas fa-thumbs-up fa-3x fa-header pull-left" style="color: #999999;"></i>'.$appTitle.' was created by George Lewe (<a href="http://www.lewe.com/">Lewe.com</a>). 
-      '.$appTitle.' also uses free modules by other great people providing those awesome techonolgies to the public. 
+$LANG['imprint'] = array(
+    array(
+        'title' => 'Author',
+        'text' => '<i class="fas fa-thumbs-up fa-3x fa-header pull-left" style="color: #999999;"></i>' . $appTitle . ' was created by George Lewe (<a href="http://www.lewe.com/">Lewe.com</a>). 
+      ' . $appTitle . ' also uses free modules by other great people providing those awesome techonolgies to the public. 
       See detailed credits on the <a href="index.php?action=about">About page</a>.',
-   ),
-   array (
-      'title' => 'Content',
-      'text' => '<p><i class="fas fa-file-alt fa-3x fa-header pull-left" style="color: #999999;"></i>The application '.$appTitle.' was created by George Lewe (<a href="http://www.lewe.com/">Lewe.com</a>).  
+    ),
+    array(
+        'title' => 'Content',
+        'text' => '<p><i class="fas fa-file-alt fa-3x fa-header pull-left" style="color: #999999;"></i>The application ' . $appTitle . ' was created by George Lewe (<a href="http://www.lewe.com/">Lewe.com</a>).  
       If you feel that any material is used inappropriately, please contact <a href="http://www.lewe.com/contact/">Lewe.com</a>.</p>
       <p>None of the content, as a whole or in parts may be reproduced, copied or reused in any form or by any means, electronic or mechanical, 
       for any purpose, without the express written permission of George Lewe.</p>',
-   ),
-   array (
-      'title' => 'Links',
-      'text' => '<p><i class="fas fa-link fa-3x fa-header pull-left" style="color: #999999;"></i>All links on '.$appTitle.' are being provided as a convenience 
-      and for informational purposes only; they do not constitute an endorsement or an approval by '.$appTitle.' of any of the products, services or opinions 
-      of the corporation or organization or individual. '.$appTitle.' bears no responsibility for the accuracy, legality or content of the external site or 
+    ),
+    array(
+        'title' => 'Links',
+        'text' => '<p><i class="fas fa-link fa-3x fa-header pull-left" style="color: #999999;"></i>All links on ' . $appTitle . ' are being provided as a convenience 
+      and for informational purposes only; they do not constitute an endorsement or an approval by ' . $appTitle . ' of any of the products, services or opinions 
+      of the corporation or organization or individual. ' . $appTitle . ' bears no responsibility for the accuracy, legality or content of the external site or 
       for that of subsequent links. Contact the external site for questions regarding its content.</p>',
-   ),
-   array (
-      'title' => 'Cookies',
-      'text' => '<p><i class="fas fa-cookie fa-3x fa-header pull-left" style="color: #999999;"></i>This application uses cookies. Cookies are small files with application 
+    ),
+    array(
+        'title' => 'Cookies',
+        'text' => '<p><i class="fas fa-cookie fa-3x fa-header pull-left" style="color: #999999;"></i>This application uses cookies. Cookies are small files with application 
       related information that are stored on your local hard drive. They do not contain any personal information nor are they transmitted anywhere but they are 
       needed to run the application properly.</p>
       <p>In the EU, legislation requires to get your consent for using cookies. By using this application you agree to the usage of cookies.</p>',
-   ),
+    ),
 );
 
-if ( $C->read('googleAnalytics') AND $C->read("googleAnalyticsID")) {
-   $LANG['imprint'][] = array (
-      'title' => 'Google Analytics',
-      'text' => '<p><i class="fab fa-google fa-3x pull-left" style="color: #999999;"></i>This website uses Google Analytics, a web analytics service provided by
+if ($C->read('googleAnalytics') and $C->read("googleAnalyticsID")) {
+    $LANG['imprint'][] = array(
+        'title' => 'Google Analytics',
+        'text' => '<p><i class="fab fa-google fa-3x pull-left" style="color: #999999;"></i>This website uses Google Analytics, a web analytics service provided by
       Google, Inc. ("Google"). Google Analytics uses "cookies", which are text files placed on your computer, to help the website analyze how users use the site.
       The information generated by the cookie about the use of this website will be transmitted to and stored by Google on servers that may reside in the United States.</p>
       <div class="collapse" id="readmore">
@@ -703,7 +703,7 @@ if ( $C->read('googleAnalytics') AND $C->read("googleAnalyticsID")) {
          this domain). An opt-out cookie will be stored on your device, which means that you\'ll have to click this link again, if you delete your cookies.</p>
       </div>
       <p><a class="btn btn-default" data-toggle="collapse" data-target="#readmore">Read more/less...</a></p>',
-   );
+    );
 }
 
 //
@@ -1218,4 +1218,3 @@ $LANG['imp_hidden'] = 'Hidden';
 $LANG['imp_hidden_comment'] = 'Select wether the imported users shall be set to hidden.';
 $LANG['imp_locked'] = 'Locked';
 $LANG['imp_locked_comment'] = 'Select wether the imported users shall be set to locked.';
-?>

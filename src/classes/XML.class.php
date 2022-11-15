@@ -6,7 +6,7 @@ if (!defined('VALID_ROOT')) exit('');
  * This class provides methods and properties for XML handling.
  * 
  * @author George Lewe <george@lewe.com>
- * @copyright Copyright (c) 2014-2020 by George Lewe
+ * @copyright Copyright (c) 2014-2022 by George Lewe
  * @link https://www.lewe.com
  *
  * @package TeamCal Neo Basic
@@ -70,4 +70,3 @@ class XML
       return $this->header.$this->startTag."\n".$this->body.$this->endTag;
    }
 }
-?>

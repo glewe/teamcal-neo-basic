@@ -4,7 +4,7 @@ if (!defined('VALID_ROOT')) exit('');
  * Notification Helper Functions
  *
  * @author George Lewe <george@lewe.com>
- * @copyright Copyright (c) 2014-2020 by George Lewe
+ * @copyright Copyright (c) 2014-2022 by George Lewe
  * @link https://www.lewe.com
  *
  * @package TeamCal Neo Basic
@@ -588,4 +588,3 @@ function validEmail($email)
    }
    return $isValid;
 }
-?>

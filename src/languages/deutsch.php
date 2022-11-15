@@ -4,7 +4,7 @@ if (!defined('VALID_ROOT')) exit('');
  * German Framework Strings
  *
  * @author George Lewe <george@lewe.com>
- * @copyright Copyright (c) 2014-2020 by George Lewe
+ * @copyright Copyright (c) 2014-2022 by George Lewe
  * @link https://www.lewe.com
  *
  * @package TeamCal Neo Basic
@@ -51,33 +51,33 @@ $LANG['grey'] = 'Grau';
 $LANG['group'] = 'Gruppe';
 $LANG['license'] = 'TeamCal Neo Lizenz';
 $LANG['magenta'] = 'Magenta';
-$LANG['monthnames'] = array (
-   1 => "Januar",
-   "Februar",
-   "M&auml;rz",
-   "April",
-   "Mai",
-   "Juni",
-   "Juli",
-   "August",
-   "September",
-   "Oktober",
-   "November",
-   "Dezember" 
+$LANG['monthnames'] = array(
+    1 => "Januar",
+    "Februar",
+    "M&auml;rz",
+    "April",
+    "Mai",
+    "Juni",
+    "Juli",
+    "August",
+    "September",
+    "Oktober",
+    "November",
+    "Dezember"
 );
-$LANG['monthShort'] = array (
-   1 => "Jan",
-   "Feb",
-   "M&auml;r",
-   "Apr",
-   "Mai",
-   "Jun",
-   "Jul",
-   "Aug",
-   "Sep",
-   "Okt",
-   "Nov",
-   "Dez" 
+$LANG['monthShort'] = array(
+    1 => "Jan",
+    "Feb",
+    "M&auml;r",
+    "Apr",
+    "Mai",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Okt",
+    "Nov",
+    "Dez"
 );
 $LANG['name'] = 'Name';
 $LANG['none'] = 'Keine/r';
@@ -109,23 +109,23 @@ $LANG['today'] = 'Heute';
 $LANG['total'] = 'Gesamt';
 $LANG['type'] = 'Typ';
 $LANG['user'] = 'Nutzer';
-$LANG['weekdayShort'] = array (
-   1 => "Mo",
-   "Di",
-   "Mi",
-   "Do",
-   "Fr",
-   "Sa",
-   "So" 
+$LANG['weekdayShort'] = array(
+    1 => "Mo",
+    "Di",
+    "Mi",
+    "Do",
+    "Fr",
+    "Sa",
+    "So"
 );
-$LANG['weekdayLong'] = array (
-   1 => "Montag",
-   "Dienstag",
-   "Mittwoch",
-   "Donnerstag",
-   "Freitag",
-   "Samstag",
-   "Sonntag" 
+$LANG['weekdayLong'] = array(
+    1 => "Montag",
+    "Dienstag",
+    "Mittwoch",
+    "Donnerstag",
+    "Freitag",
+    "Samstag",
+    "Sonntag"
 );
 $LANG['yellow'] = 'Gelb';
 
@@ -214,7 +214,7 @@ $LANG['alert_maintenance_text'] = 'Die Website is zurzeit auf "Unter Wartung" ge
 $LANG['alert_maintenance_help'] = 'Ein Administrator kann die Website wieder aktiv setzten unter Administration -> Framework-Konfiguration -> System.';
 
 $LANG['alert_max_user_subject'] = 'Maximal Nutzeranzahl Erreicht';
-$LANG['alert_max_user_text'] = 'Du hast die maximale Anzahl von Benutzern ('.APP_MUSR.') f&uuml;r TeamCal Neo Basic erreicht.';
+$LANG['alert_max_user_text'] = 'Du hast die maximale Anzahl von Benutzern (' . APP_MUSR . ') f&uuml;r TeamCal Neo Basic erreicht.';
 $LANG['alert_max_user_help'] = 'Aktualisiere auf die Pro Version, um unbegrenzt Benutzer einrichten zu k&ouml;nnen.';
 
 $LANG['alert_no_data_subject'] = 'Fehlerhafte Daten';
@@ -394,7 +394,7 @@ $LANG['config_defaultHomepage_comment'] = 'Diese Option bestimmt die standard St
 $LANG['config_defaultHomepage_home'] = 'Willkommen Seite';
 $LANG['config_defaultHomepage_calendarview'] = 'Kalender';
 $LANG['config_defaultLanguage'] = 'Standard Sprache';
-$LANG['config_defaultLanguage_comment'] = $appTitle. ' enth&auml;lt die Sprachen Englisch und Deutsch. Der Administrator hat eventuell weitere Sprachen installiert. 
+$LANG['config_defaultLanguage_comment'] = $appTitle . ' enth&auml;lt die Sprachen Englisch und Deutsch. Der Administrator hat eventuell weitere Sprachen installiert. 
       Hier kann die Standard Sprache eingestellt werden.';
 $LANG['config_emailConfirmation'] = 'E-Mail Best&auml;tigung erforderlich';
 $LANG['config_emailConfirmation_comment'] = 'Durch die Registrierung erh&auml;lt der User eine E-Mail an die von ihm angegebene Adresse. Sie enth&auml;lt einen 
@@ -406,7 +406,7 @@ $LANG['config_faCDN'] = 'Fontawesome CDN';
 $LANG['config_faCDN_comment'] = 'CDNs (Content Distributed Network) k&ouml;nnen einen Performance-Vorteil bieten dadurch dass popul&auml;re Web Module von Servern rund 
       um den Globus geladen werden. Fontawesome ist so ein Modul. Wenn es von einem CDN Server geladen wird, von dem das gleiche Modul 
       f&uuml;r den Nutzer schon durch eine andere Anwednung geladen wurde, ist es bereits im Cache des Nutzers und muss nicht nochmal heruntergeladen werden.<br>Diese Option
-      funktioniert nat&uuml;rlich nur mit Internetverbindung. Schalte diese Option aus, wenn du '.$appTitle.' in einer Umgebung ohne Internetverbindung betreibst.';
+      funktioniert nat&uuml;rlich nur mit Internetverbindung. Schalte diese Option aus, wenn du ' . $appTitle . ' in einer Umgebung ohne Internetverbindung betreibst.';
 $LANG['config_footerCopyright'] = 'Fu&szlig;zeilen Copyright Name';
 $LANG['config_footerCopyright_comment'] = 'Wird in der Fu&szlig;zeile oben links angezeigt. Gib nur den Namen ein, das (aktuelle) Jahr wird autmatisch angezeigt.';
 $LANG['config_footerCopyrightUrl'] = 'Fu&szlig;zeilen Copyright URL';
@@ -445,7 +445,7 @@ $LANG['config_jQueryCDN'] = 'jQuery CDN';
 $LANG['config_jQueryCDN_comment'] = 'CDNs (Content Distributed Network) k&ouml;nnen einen Performance-Vorteil bieten dadurch dass popul&auml;re Web Module von Servern rund 
       um den Globus geladen werden. jQuery ist so ein Modul. Wenn es von einem CDN Server geladen wird, von dem das gleiche Modul 
       f&uuml;r den Nutzer schon durch eine andere Anwendung geladen wurde, ist es bereits im Cache des Nutzers und muss nicht nochmal heruntergeladen werden.<br>Schalte 
-      diese Option aus, wenn du '.$appTitle.' in einer Umgebung ohne Internetverbindung betreibst.';
+      diese Option aus, wenn du ' . $appTitle . ' in einer Umgebung ohne Internetverbindung betreibst.';
 $LANG['config_jqtheme'] = 'jQuery UI Theme';
 $LANG['config_jqtheme_comment'] = $appTitle . ' nutzt jQuery UI, eine popul&auml;re Sammlung von Javascript Tools. jQuery UI bietet auch verschiedene Themes, die die Anzeige 
       der Reiterdialoge u.a. Objekten bestimmen. Das Standard Theme ist "smoothness", ein neutrales Schema mit Graut&ouml;nen. Versuche andere aus der Liste, manche sind 
@@ -519,7 +519,7 @@ $LANG['config_userCustom4_comment'] = 'Gibt den Titel dieses Feldes an, der im B
 $LANG['config_userCustom5'] = 'Profilfeld 5 Titel';
 $LANG['config_userCustom5_comment'] = 'Gibt den Titel dieses Feldes an, der im Benutzerprofil Dialog angezeigt wird.';
 $LANG['config_userManual'] = 'Nutzerhandbuch';
-$LANG['config_userManual_comment'] = $appTitle . '\'s Nutzerhandbuch ist in Englisch verf&uuml;gbar auf der <a href="https://support.lewe.com/docs/teamcal-neo-manual/" target="_blank">Lewe.com Support site</a>.
+$LANG['config_userManual_comment'] = $appTitle . '\'s Nutzerhandbuch ist in Englisch verf&uuml;gbar auf der <a href="https://lewe.gitbook.io/teamcal-neo/" target="_blank">Lewe.com Gitbook site</a>.
       Solltest du ein eigenes Handbuch geschrieben haben, kannst du den Link hier angeben. Der Link wird im Hilfe Menu angezeigt. Wenn dieses Feld leer ist, wird kein Eintrag im Hilfe Menu angezeigt.';
 $LANG['config_versionCompare'] = 'Versionsvergleich';
 $LANG['config_versionCompare_comment'] = 'Mit dieser Option &uuml;berpr&uuml;ft TeamCal Neo auf der "&Uuml;ber TeamCal Neo" Seite die laufende Version und vergleicht sie mit der neusten verf&uuml;gbaren. Dazu ben&ouml;tigt
@@ -654,41 +654,41 @@ $LANG['home_title'] = 'Willkommen bei ' . $appTitle;
 // Imprint
 // You can add more arrays here in order to display them on the Imprint page
 //
-$LANG['imprint'] = array ( 
-   array (
-      'title' => 'Author',
-      'text' => '<i class="fas fa-thumbs-up fa-3x fa-header pull-left" style="color: #999999;"></i>'.$appTitle.' wurde von George Lewe erstellt (<a href="http://www.lewe.com/">Lewe.com</a>).  
-      '.$appTitle.' nutzt auch kostenlose Module von anderen gro&szlig;artigen Entwicklern, die dankenswerter Weise
+$LANG['imprint'] = array(
+    array(
+        'title' => 'Author',
+        'text' => '<i class="fas fa-thumbs-up fa-3x fa-header pull-left" style="color: #999999;"></i>' . $appTitle . ' wurde von George Lewe erstellt (<a href="http://www.lewe.com/">Lewe.com</a>).  
+      ' . $appTitle . ' nutzt auch kostenlose Module von anderen gro&szlig;artigen Entwicklern, die dankenswerter Weise
       ihre Arbeit &ouml;ffentlich verf&uuml;gbar machen. Details dazu befinden sich auf der <a href="index.php?action=about">About Seite</a>.',
-   ),
-   array (
-      'title' => 'Inhalt',
-      'text' => '<p><i class="fas fa-file-alt fa-3x fa-header pull-left" style="color: #999999;"></i>Die Inhalte von '.$appTitle.' wurden sorgf&auml;tig vorbereitet und
+    ),
+    array(
+        'title' => 'Inhalt',
+        'text' => '<p><i class="fas fa-file-alt fa-3x fa-header pull-left" style="color: #999999;"></i>Die Inhalte von ' . $appTitle . ' wurden sorgf&auml;tig vorbereitet und
       erstellt. Wo andere Quellen benutzt wurde, wird auch darauf hingewiesen. Sollte dies nicht der Fall sein, bitte informiere George Lewe mittels dieses 
       <a href="http://www.lewe.com/contact">Forumlars</a>.</p> 
       <p>Kein Inhalt der Applikation/Site, ganz oder in Teilen darf vervielf&auml;tigt, reproduziert, kopiert oder wiederwendet werden, in keiner Form, 
       elektronisch oder mechanisch, egal f&uuml;r welchen Zweck ohne ausdr&uuml;ckliche Erlaubnis von George Lewe.</p>',
-   ),
-   array (
-      'title' => 'Links',
-      'text' => '<p><i class="fas fa-link fa-3x fa-header pull-left" style="color: #999999;"></i>Alle Links bei '.$appTitle.' werden als Annehmlichkeit und nur
-      zu Informationszwecken angeboten. Sie stellen keine Bef&uuml;rwortung oder Akzeptanz der entfernten Inhalte durch '.$appTitle.' dar, weder in Bezug auf
-      Produkte, Services oder Meinungen der verlinkten Anbieter. '.$appTitle.' ist nicht verantwortlich f&uuml;r die Richtigkeit oder Rechtm&auml;&szlig;keit
+    ),
+    array(
+        'title' => 'Links',
+        'text' => '<p><i class="fas fa-link fa-3x fa-header pull-left" style="color: #999999;"></i>Alle Links bei ' . $appTitle . ' werden als Annehmlichkeit und nur
+      zu Informationszwecken angeboten. Sie stellen keine Bef&uuml;rwortung oder Akzeptanz der entfernten Inhalte durch ' . $appTitle . ' dar, weder in Bezug auf
+      Produkte, Services oder Meinungen der verlinkten Anbieter. ' . $appTitle . ' ist nicht verantwortlich f&uuml;r die Richtigkeit oder Rechtm&auml;&szlig;keit
       der verlinkten Inhalte. Bei Fragen oder Bedenken zu den verlinkten Inhalten kontakiere bitte den Anbieter dort.</p>',
-   ),
-   array (
-      'title' => 'Cookies',
-      'text' => '<p><i class="fas fa-cookie fa-3x fa-header pull-left" style="color: #999999;"></i>Diese Applikation benutzt Cookies. Cookies sind kleine Dateien mit 
+    ),
+    array(
+        'title' => 'Cookies',
+        'text' => '<p><i class="fas fa-cookie fa-3x fa-header pull-left" style="color: #999999;"></i>Diese Applikation benutzt Cookies. Cookies sind kleine Dateien mit 
       applikationsrelevanten Informationen, die auf der lokalen Festplatte gespeichert werden. Sie enthalten keine pers&ouml;nlichen Daten und werden auch 
       nicht &uuml;bertragen. Sie sind aber notwendig, damit diese Applikation funktioniert.</p>
       <p>In der EU ist es Gesetz, die Zustimmung des Nutzers dazu zu erhalten. Mit der Nutzung dieser Applikation wird diese Zustimmung vorausgesetzt.</p>',
-   ),
+    ),
 );
 
-if ( $C->read('googleAnalytics') AND $C->read("googleAnalyticsID")) {
-   $LANG['imprint'][] = array (
-      'title' => 'Google Analytics',
-      'text' => '<p><i class="fab fa-google fa-3x fa-header pull-left" style="color: #999999;"></i>Diese Website benutzt Google Analytics, einen Webanalysedienst der Google Inc.
+if ($C->read('googleAnalytics') and $C->read("googleAnalyticsID")) {
+    $LANG['imprint'][] = array(
+        'title' => 'Google Analytics',
+        'text' => '<p><i class="fab fa-google fa-3x fa-header pull-left" style="color: #999999;"></i>Diese Website benutzt Google Analytics, einen Webanalysedienst der Google Inc.
       ("Google"). Google Analytics verwendet sog. "Cookies", Textdateien, die auf Ihrem Computer gespeichert werden und die eine Analyse der Benutzung der Website
       durch Sie erm&ouml;glichen. Die durch den Cookie erzeugten Informationen &uuml;ber die Nutzung dieser Website werden an Server von Google &uuml;bertragen und 
       dort gespeichert. Diese Server k&ouml;nnen sich den USA befinden.</p>
@@ -708,9 +708,9 @@ if ( $C->read('googleAnalytics') AND $C->read("googleAnalyticsID")) {
          und nur f&uuml;r diese Domain). Dabei wird ein Opt-Out-Cookie auf Ihrem Ger&auml;t abgelegt. L&ouml;schen Sie Ihre Cookies in diesem Browser, m&uuml;ssen Sie diesen Link erneut klicken.</p>
       </div>
       <p><a class="btn btn-default" data-toggle="collapse" data-target="#readmore">Mehr/Weniger Details...</a></p>',
-   );
+    );
 }
-      
+
 //
 // Log
 //
@@ -808,7 +808,7 @@ $LANG['mnu_admin_roles'] = 'Rollen';
 $LANG['mnu_admin_systemlog'] = 'System Log';
 $LANG['mnu_admin_users'] = 'Nutzer';
 $LANG['mnu_help'] = 'Hilfe';
-$LANG['mnu_help_about'] = '&Uuml;ber '. $appTitle;
+$LANG['mnu_help_about'] = '&Uuml;ber ' . $appTitle;
 $LANG['mnu_help_dataprivacy'] = 'Datenschutzerkl&auml;rung';
 $LANG['mnu_help_help'] = 'Nutzerhandbuch';
 $LANG['mnu_help_imprint'] = 'Impressum';
@@ -1221,4 +1221,3 @@ $LANG['imp_hidden'] = 'Verborgen';
 $LANG['imp_hidden_comment'] = 'W&auml;hle diese Option, wenn die importierten Benutzer als "verborgen" gekennzeichnet werden sollen.';
 $LANG['imp_locked'] = 'Gesperrt';
 $LANG['imp_locked_comment'] = 'W&auml;hle diese Option, wenn die importierten Benutzer als "gesperrt" gekennzeichnet werden sollen.';
-?>

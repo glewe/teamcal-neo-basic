@@ -1,5 +1,7 @@
 ![logo-128.png](https://github.com/glewe/teamcal-neo-basic/raw/master/src/images/icons/logo-80.png)
-# TeamCal Neo Basic 
+
+# TeamCal Neo Basic
+
 [![PHP](https://img.shields.io/badge/Language-PHP-8892BF.svg)](https://www.php.net/)
 ![Support](https://img.shields.io/badge/Support-Yes-green.svg)
 
@@ -11,6 +13,6 @@ TeamCal Neo Basic is free and offers the core features of the calendar. Advanced
 
 # Links
 
-* [Product Page](https://www.lewe.com/teamcal-neo/)
-* [Documentation](https://support.lewe.com/docs/teamcal-neo-manual/)
-* [Forum](http://forum.lewe.com/viewforum.php?f=31)
+-   [Product Page](https://www.lewe.com/teamcal-neo/)
+-   [Documentation](https://lewe.gitbook.io/teamcal-neo/)
+-   [Forum](http://forum.lewe.com/viewforum.php?f=31)

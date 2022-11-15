@@ -4,7 +4,7 @@ if (!defined('VALID_ROOT')) exit('');
  * Application Configuration
  *
  * @author George Lewe <george@lewe.com>
- * @copyright Copyright (c) 2014-2020 by George Lewe
+ * @copyright Copyright (c) 2014-2022 by George Lewe
  * @link https://www.lewe.com
  *
  * @package TeamCal Neo Basic
@@ -35,7 +35,7 @@ define('APP_IMP_DIR', "upload/import/");
 // Set this to 0 if you want to run the installation.php script again.
 // If not, you need to delete or rename the installation.php file.
 //
-define('APP_INSTALLED', "0");
+define('APP_INSTALLED', "1");
 
 //
 // The cookie prefix to be used on the browser client's device
@@ -158,7 +158,7 @@ define('APP_YEAR', "2014-" . date('Y'));
 define('APP_AUTHOR', "George Lewe");
 define('APP_URL', "http://www.lewe.com");
 define('APP_EMAIL', "george@lewe.com");
-define('APP_LICENSE', "https://support.lewe.com/docs/teamcal-neo-manual/teamcal-neo-license/");
+define('APP_LICENSE', "https://lewe.gitbook.io/teamcal-neo/readme/teamcal-neo-license");
 define('APP_COPYRIGHT', "(c) " . APP_YEAR . " by " . APP_AUTHOR . " (" . APP_URL . ")");
 define('APP_MUSR', 20);
 define('APP_MABS', 10);

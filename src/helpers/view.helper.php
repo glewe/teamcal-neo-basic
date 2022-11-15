@@ -4,7 +4,7 @@ if (!defined('VALID_ROOT')) exit('');
  * View Helper Functions
  *
  * @author George Lewe <george@lewe.com>
- * @copyright Copyright (c) 2014-2020 by George Lewe
+ * @copyright Copyright (c) 2014-2022 by George Lewe
  * @link https://www.lewe.com
  *
  * @package TeamCal Neo Basic
@@ -393,4 +393,3 @@ function iconTooltip($text='Tooltip text', $title='', $position='top', $type='in
    $html = '<span data-position="tooltip-'.$position.'" class="tooltip-'.$type.' fa fa-'.$icon.' text-'.$type.'" data-toggle="tooltip" data-title="'.$ttText.'"></span>';
    return $html;
 }
-?>

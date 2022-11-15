@@ -2,7 +2,7 @@
  * Sample MySQL Database
  *
  * @author George Lewe <george@lewe.com>
- * @copyright Copyright (c) 2014-2020 by George Lewe
+ * @copyright Copyright (c) 2014-2022 by George Lewe
  * @link https://www.lewe.com
  *
  * @package TeamCal Neo Basic
@@ -496,7 +496,7 @@ INSERT INTO `tcneo_config` (`id`, `name`, `value`) VALUES
 (141, 'logcolorImport', 'warning'),
 (142, 'logfilterImport', '1'),
 (143, 'appKeywords', 'Lewe TeamCal Neo'),
-(144, 'userManual', 'https%3A%2F%2Fsupport.lewe.com%2Fdocs%2Fteamcal-neo-manual%2F'),
+(144, 'userManual', 'https%3A%2F%2Flewe.gitbook.io%2Fteamcal-neo%2F'),
 (145, 'footerCopyrightUrl', 'http://www.lewe.com'),
 (146, 'footerSocialLinks', 'https://www.linkedin.com/in/george-lewe-a9ab6411b;https://www.xing.com/profile/George_Lewe;https://github.com/glewe/tcneobasic;https://www.paypal.me/GeorgeLewe'),
 (147, 'footerViewport', '0'),

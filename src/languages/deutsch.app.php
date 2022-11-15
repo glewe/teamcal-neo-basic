@@ -4,7 +4,7 @@ if (!defined('VALID_ROOT')) exit('');
  * German Application Strings
  *
  * @author George Lewe <george@lewe.com>
- * @copyright Copyright (c) 2014-2020 by George Lewe
+ * @copyright Copyright (c) 2014-2022 by George Lewe
  * @link https://www.lewe.com
  *
  * @package TeamCal Neo Basic
@@ -980,4 +980,3 @@ $LANG['year_selRegion'] = 'Region ausw&auml;hlen';
 $LANG['year_selUser'] = 'Nutzer ausw&auml;hlen';
 $LANG['year_showyearmobile'] = 'Der Jahreskalender dient der &Uuml;bersicht "auf den ersten Blick". Auf mobilen Ger&auml;ten mit geringer Bildschirmbreite kann dies
       ohne horizontales Scrollen nicht erreicht werden.</p><p>Mit dem "Kalender anzeigen" Knopf kann die Anzeige aktiviert und horizontales Scrollen akzeptiert werden.</p>';
-?>

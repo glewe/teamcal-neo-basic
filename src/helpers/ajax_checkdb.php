@@ -4,7 +4,7 @@ if (!defined('VALID_ROOT')) exit('');
  * Database Check
  *
  * @author George Lewe <george@lewe.com>
- * @copyright Copyright (c) 2014-2020 by George Lewe
+ * @copyright Copyright (c) 2014-2022 by George Lewe
  * @link https://www.lewe.com
  *
  * @package TeamCal Neo Basic
@@ -40,4 +40,3 @@ else
    $msg = "<div class='alert alert-danger'><h4><strong>Database Connection Test</strong></h4><p>Connect to mySQL server and/or database failed.</p></div>";
 }
 echo $msg;
-?>

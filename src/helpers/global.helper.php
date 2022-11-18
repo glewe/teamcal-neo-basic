@@ -489,7 +489,7 @@ function generatePassword($length = 9)
  * Optionally you can specify an array of extension to look for.
  *
  * @param string $myDir Directory name to scan
- * @param string $myExt Array of extensions to scan for
+ * @param array  $myExt Array of extensions to scan for
  * @param string $myPrefix An optional prefix of the filename
  * 
  * @return array Array containing the names of the files
@@ -739,13 +739,16 @@ function getPhpInfo()
     phpinfo();
 
     preg_match('%<style type="text/css">(.*?)</style>.*?<body>(.*?)</body>%s', ob_get_clean(), $matches);
+    $newfunc = function ($i) {
+        return ".phpinfodisplay " . preg_replace("/,/", ",.phpinfodisplay ", $i);
+    };
 
     /**
      * $matches [1]; Style information
      * $matches [2]; Body information
      */
     $phpi = "<div class='phpinfodisplay'><style type='text/css'>\n";
-    $phpi .= join("\n", array_map(create_function('$i', 'return ".phpinfodisplay " . preg_replace( "/,/", ",.phpinfodisplay ", $i );'), preg_split('/\n/', trim(preg_replace("/\nbody/", "\n", $matches[1])))));
+    $phpi .= join("\n", array_map($newfunc, preg_split('/\n/', trim(preg_replace("/\nbody/", "\n", $matches[1])))));
     $phpi .= "</style>\n";
     $phpi .= $matches[2];
     $phpi .= "\n</div>\n";

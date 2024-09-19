@@ -1,0 +1,21 @@
+==============================================================================
+TeamCal Neo Basic Installation
+==============================================================================
+
+Installation
+============
+
+Refer to this documentation for how to install TeamCal Neo (Basic and Pro):
+https://lewe.gitbook.io/teamcal-neo/installation
+
+
+Support
+=======
+
+TeamCal Neo Basic support is available here:
+
+GitHub Issues: https://github.com/glewe/teamcal-neo-basic/issues
+Documentation: https://lewe.gitbook.io/teamcal-neo/
+
+Best regards,
+George Lewe

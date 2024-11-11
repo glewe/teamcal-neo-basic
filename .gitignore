@@ -18,6 +18,11 @@ npm-debug.log.*
 /.cache-loader/*
 
 ######################
+# Composer
+######################
+vendor/
+
+######################
 # SASS
 ######################
 .sass-cache/
@@ -139,6 +144,7 @@ Desktop.ini
 *~
 .merge_file*
 yarn.lock
+_*.cmd
 
 ######################
 # Gradle Wrapper
@@ -165,3 +171,10 @@ yarn.lock
 # SonarQube
 ######################
 /.scannerwork/
+sonar-project.properties
+sonarscan.cmd
+
+######################
+# Distribution Files
+######################
+_dist/

@@ -14,7 +14,6 @@ if (!defined('VALID_ROOT')) {
  */
 ?>
 <!DOCTYPE html>
-<!-- Theme CSS -->
 <html lang="<?= $LANG['html_locale'] ?>" data-bs-theme="light" data-width="narrow">
 <head>
   <!--
@@ -26,6 +25,25 @@ if (!defined('VALID_ROOT')) {
                All rights reserved.
   ===============================================================================
   -->
+
+  <?php
+  if ($C->read("googleAnalytics") && $C->read("googleAnalyticsID")) {
+    $gatag = $C->read("googleAnalyticsID");
+    ?>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=<?= $gatag ?>"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+
+      gtag('js', new Date());
+      gtag('config', '<?= $gatag ?>');
+    </script>
+  <?php } ?>
+
   <title><?= $htmlData['title'] ?></title>
 
   <meta http-equiv="content-type" content="text/html;charset=utf-8">
@@ -162,42 +180,6 @@ if (!defined('VALID_ROOT')) {
         padding: 5px 0 5px 0;
       }
     </style>
-  <?php } ?>
-
-  <?php if ($C->read("googleAnalytics") && $C->read("googleAnalyticsID")) { ?>
-    <!--Begin: Google Analytics GA4-->
-    <script>
-      // Define dataLayer and the gtag function.
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      // Set default consents to 'denied'
-      // Set analytic consent to 'granted' (see Imprint page for opt-out option)
-      gtag('consent', 'default', {
-        'ad_storage': 'denied',
-        'ad_user_data': 'denied',
-        'ad_personalization': 'denied',
-        'analytics_storage': 'granted'
-      });
-    </script>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=<?= $C->read("googleAnalyticsID") ?>"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
-      gtag('config', '<?= $C->read("googleAnalyticsID") ?>');
-      // Opt out to GA
-      function gaOptout() {
-        gtag('consent', 'update', {
-          'analytics_storage': 'denied'
-        });
-      }
-    </script>
-    <!--End: Google Analytics GA4-->
   <?php } ?>
 
 </head>

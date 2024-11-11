@@ -97,7 +97,7 @@ view.about
 </div>
 
 <?php if ($C->read("versionCompare")) { ?>
-  <script src="https://support.lewe.com/version/tcneo.js"></script>
+  <script src="https://support.lewe.com/version/tcneobasic.js"></script>
   <script>
     var running_version = parseVersionString('<?= APP_VER ?>');
     if (running_version.major < latest_version.major) {

@@ -56,7 +56,6 @@ require_once WEBSITE_ROOT . '/helpers/notification.helper.php';
 require_once WEBSITE_ROOT . '/helpers/view.helper.php';
 require_once WEBSITE_ROOT . '/helpers/app.helper.php';
 
-
 //=============================================================================
 //
 // CHECK INSTALLATION SCRIPT

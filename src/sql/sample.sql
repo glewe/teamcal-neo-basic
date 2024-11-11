@@ -325,27 +325,30 @@ CREATE TABLE IF NOT EXISTS `tcneo_archive_templates` (
 --
 
 DROP TABLE IF EXISTS `tcneo_archive_users`;
-CREATE TABLE IF NOT EXISTS `tcneo_archive_users` (
-  `username` varchar(40) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT '',
-  `password` varchar(40) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
-  `firstname` varchar(80) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
-  `lastname` varchar(80) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
-  `email` varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
-  `order_key` varchar(80) NOT NULL DEFAULT '0',
-  `role` int(11) DEFAULT 2,
-  `locked` tinyint(4) DEFAULT 0,
-  `hidden` tinyint(4) DEFAULT 0,
-  `onhold` tinyint(4) DEFAULT 0,
-  `verify` tinyint(4) DEFAULT 0,
-  `bad_logins` tinyint(4) DEFAULT 0,
-  `grace_start` datetime DEFAULT NULL,
-  `last_pw_change` datetime DEFAULT NULL,
-  `last_login` datetime DEFAULT NULL,
-  `created` datetime DEFAULT NULL,
+CREATE TABLE IF NOT EXISTS `tcneo_archive_users`
+(
+  `username`       varchar(40) NOT NULL DEFAULT '',
+  `password`       varchar(255)         DEFAULT NULL,
+  `firstname`      varchar(80)          DEFAULT NULL,
+  `lastname`       varchar(80)          DEFAULT NULL,
+  `email`          varchar(100)         DEFAULT NULL,
+  `order_key`      varchar(80) NOT NULL DEFAULT '0',
+  `role`           int(11)              DEFAULT 2,
+  `locked`         tinyint(4)           DEFAULT 0,
+  `hidden`         tinyint(4)           DEFAULT 0,
+  `onhold`         tinyint(4)           DEFAULT 0,
+  `verify`         tinyint(4)           DEFAULT 0,
+  `bad_logins`     tinyint(4)           DEFAULT 0,
+  `grace_start`    datetime    NOT NULL DEFAULT '2024-01-01 00:00:00',
+  `last_pw_change` datetime    NOT NULL DEFAULT '2024-01-01 00:00:00',
+  `last_login`     datetime    NOT NULL DEFAULT '2024-01-01 00:00:00',
+  `created`        datetime    NOT NULL DEFAULT '2024-01-01 00:00:00',
   PRIMARY KEY (`username`),
   KEY `k_firstname` (`firstname`),
   KEY `k_lastname` (`lastname`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+) ENGINE = MyISAM
+  DEFAULT CHARSET = utf8
+  COLLATE = utf8_bin;
 
 -- --------------------------------------------------------
 
@@ -1144,27 +1147,31 @@ INSERT INTO `tcneo_templates` (`id`, `username`, `year`, `month`, `abs1`, `abs2`
 --
 
 DROP TABLE IF EXISTS `tcneo_users`;
-CREATE TABLE IF NOT EXISTS `tcneo_users` (
-  `username` varchar(40) NOT NULL DEFAULT '',
-  `password` varchar(255) DEFAULT NULL,
-  `firstname` varchar(80) DEFAULT NULL,
-  `lastname` varchar(80) DEFAULT NULL,
-  `email` varchar(100) DEFAULT NULL,
-  `order_key` varchar(80) NOT NULL DEFAULT '0',
-  `role` int(11) DEFAULT 2,
-  `locked` tinyint(4) DEFAULT 0,
-  `hidden` tinyint(4) DEFAULT 0,
-  `onhold` tinyint(4) DEFAULT 0,
-  `verify` tinyint(4) DEFAULT 0,
-  `bad_logins` tinyint(4) DEFAULT 0,
-  `grace_start` datetime NOT NULL DEFAULT '1900-01-01 00:00:00',
-  `last_pw_change` datetime NOT NULL DEFAULT '1900-01-01 00:00:00',
-  `last_login` datetime NOT NULL DEFAULT '1900-01-01 00:00:00',
-  `created` datetime NOT NULL DEFAULT '1900-01-01 00:00:00',
+CREATE TABLE IF NOT EXISTS `tcneo_users`
+(
+  `username`       varchar(40) NOT NULL DEFAULT '',
+  `password`       varchar(255)         DEFAULT NULL,
+  `firstname`      varchar(80)          DEFAULT NULL,
+  `lastname`       varchar(80)          DEFAULT NULL,
+  `email`          varchar(100)         DEFAULT NULL,
+  `order_key`      varchar(80) NOT NULL DEFAULT '0',
+  `role`           int(11)              DEFAULT 2,
+  `locked`         tinyint(4)           DEFAULT 0,
+  `hidden`         tinyint(4)           DEFAULT 0,
+  `onhold`         tinyint(4)           DEFAULT 0,
+  `verify`         tinyint(4)           DEFAULT 0,
+  `bad_logins`     tinyint(4)           DEFAULT 0,
+  `grace_start`    datetime    NOT NULL DEFAULT '2024-01-01 00:00:00',
+  `last_pw_change` datetime    NOT NULL DEFAULT '2024-01-01 00:00:00',
+  `last_login`     datetime    NOT NULL DEFAULT '2024-01-01 00:00:00',
+  `created`        datetime    NOT NULL DEFAULT '2024-01-01 00:00:00',
   PRIMARY KEY (`username`),
   KEY `k_firstname` (`firstname`),
   KEY `k_lastname` (`lastname`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+) ENGINE = MyISAM
+  DEFAULT CHARSET = utf8
+  COLLATE = utf8_bin;
+
 
 --
 -- Dumping data for table `tcneo_users`

@@ -20,7 +20,7 @@ if (!defined('VALID_ROOT')) {
  * Enter your database parameter here
  */
 $CONF['db_server'] = "localhost";
-$CONF['db_name'] = "tcneobasic";
+$CONF['db_name'] = "tcneo_basic";
 $CONF['db_user'] = "root";
 $CONF['db_pass'] = "";
 $CONF['db_table_prefix'] = "tcneo_";

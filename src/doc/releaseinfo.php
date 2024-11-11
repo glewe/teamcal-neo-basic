@@ -2,6 +2,26 @@
 $releases = [
   //---------------------------------------------------------------------------
   [
+    'version' => '4.0.1',
+    'date' => '2024-11-11',
+    'info' => '',
+    'bugfixes' => [
+      [ 'summary' => 'Fixed global font option not working', 'issue' => 'https://github.com/glewe/teamcal-neo/issues/9' ],
+      [ 'summary' => 'Fixed horizontal scroll on mobile devices', 'issue' => '' ],
+      [ 'summary' => 'Fixed users and archive_users table config', 'issue' => '' ],
+      [ 'summary' => 'Fixed config page alert message', 'issue' => '' ],
+      [ 'summary' => 'Fixed version compare script', 'issue' => '' ],
+    ],
+    'features' => [
+    ],
+    'improvements' => [
+      [ 'summary' => 'Updated Google Analytics script', 'issue' => '' ],
+    ],
+    'removals' => [
+    ],
+  ],
+  //---------------------------------------------------------------------------
+  [
     'version' => '4.0.0',
     'date' => '2024-09-19',
     'info' => 'This is a new major release of TeamCal Neo Basic derived from the full version of TeamCal Neo.',

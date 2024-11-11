@@ -110,8 +110,8 @@ $CONF['uplMaxsize'] = 2048 * 1024; // 2 MB
  * !Do not change anything below this line. It is protected by the license agreement!
  */
 define('APP_NAME', "TeamCal Neo Basic");
-define('APP_VER', "4.0.0");
-define('APP_DATE', "2024-09-15");
+define('APP_VER', "4.0.1");
+define('APP_DATE', "2024-11-11");
 define('APP_YEAR', "2014-" . date('Y'));
 define('APP_AUTHOR', "George Lewe");
 define('APP_URL', "https://www.lewe.com");

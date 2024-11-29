@@ -19,8 +19,6 @@ class Login {
   private $hostName = '';
   private $min_pw_length = 0;
   private $pw_strength = 0;
-  private $php_self = '';
-  private $log = '';
 
   //---------------------------------------------------------------------------
   /**
@@ -34,8 +32,6 @@ class Login {
     $this->grace_period = intval($C->read("gracePeriod"));
     $this->min_pw_length = intval($C->read("pwdLength"));
     $this->pw_strength = intval($C->read("pwdStrength"));
-    $this->php_self = $_SERVER['PHP_SELF'];
-    $this->log = $CONF['db_table_log'];
     $this->hostName = $this->getHost();
   }
 
@@ -329,7 +325,7 @@ class Login {
     // Clear current cookie
     setcookie($this->cookie_name, '', time() - 3600, '', $this->hostName, false, true);
     // Set new cookie
-    setcookie($this->cookie_name, $value, time() + intval($C->read("cookieLifetime")), '', $this->hostName, true, true);
+    setcookie($this->cookie_name, $value, time() + intval($C->read("cookieLifetime")), '', $this->hostName, false, true);
     $U->bad_logins = 0;
     $U->grace_start = DEFAULT_TIMESTAMP;
     $U->last_login = date("YmdHis");

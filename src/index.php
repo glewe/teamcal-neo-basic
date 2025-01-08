@@ -11,8 +11,8 @@
  * @since 3.0.0
  */
 
-// Comment out the following line if you want to show PHP errors in your browser during runtime.
-// You should disable this line in a test or development environment only.
+// Set error_reporting to 0 in production environments.
+// Set it to E_ALL if you want to show PHP errors in your browser during runtime.
 error_reporting(0);
 //error_reporting(E_ALL);
 

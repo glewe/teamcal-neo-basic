@@ -6,7 +6,7 @@ $releases = [
     'date' => '2025-01-08',
     'info' => '',
     'bugfixes' => [
-      [ 'summary' => 'Added missing vendor folder to distribution package', 'issue' => 'https://github.com/glewe/teamcal-neo/issues/12' ],
+      [ 'summary' => 'Added missing vendor folder to distribution package', 'issue' => 'https://github.com/glewe/teamcal-basic/issues/1' ],
     ],
     'features' => [
     ],

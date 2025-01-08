@@ -13,16 +13,19 @@ if (!defined('VALID_ROOT')) {
  * @since 3.0.0
  */
 
-//
-// BOOTSTRAP COLORS
-//
-// $bsColors = array ( 'danger', 'default', 'info', 'primary', 'success', 'warning' );
+/**
+ * ----------------------------------------------------------------------------
+ * BOOTSTRAP COLORS
+ * ----------------------------------------------------------------------------
+ */
 $bsColors = array( 'black-50', 'body', 'danger', 'dark', 'info', 'light', 'muted', 'primary', 'secondary', 'success', 'warning', 'white', 'white-50' );
 $bsBgColors = array( 'danger', 'dark', 'info', 'light', 'primary', 'secondary', 'success', 'transparent', 'warning', 'white' );
 
-//
-// DEFAULT TIME ZONE
-//
+/**
+ * ----------------------------------------------------------------------------
+ * DEFAULT TIME ZONE
+ * ----------------------------------------------------------------------------
+ */
 $timezones = DateTimeZone::listIdentifiers(DateTimeZone::ALL);
 $tz = $C->read("timeZone");
 if (!strlen($tz) || $tz == "default") {
@@ -31,10 +34,13 @@ if (!strlen($tz) || $tz == "default") {
   date_default_timezone_set($tz);
 }
 
-//
-// USER DATA
-// Used for the currently logged in user
-//
+/**
+ * ----------------------------------------------------------------------------
+ * USER DATA
+ * ----------------------------------------------------------------------------
+ *
+ * Used for the currently logged in user
+ */
 $userData = array(
   'isLoggedIn' => false,
   'role' => 'public',
@@ -43,10 +49,13 @@ $userData = array(
   'tooltip' => ''
 );
 
-//
-// ALERT DATA
-// Used for the alert view
-//
+/**
+ * ----------------------------------------------------------------------------
+ * ALERT DATA
+ * ----------------------------------------------------------------------------
+ *
+ * Used for alert view
+ */
 $alertData = array(
   'type' => 'info',
   'title' => 'Information',
@@ -55,47 +64,58 @@ $alertData = array(
   'help' => ''
 );
 
-//
-// LANGUAGES
-//
+/**
+ * ----------------------------------------------------------------------------
+ * LANGUAGES
+ * ----------------------------------------------------------------------------
+ */
 $appLanguages = getLanguages();
 asort($appLanguages);
 $logLanguages = getLanguages('log');
 asort($logLanguages);
 
-//
-// THEMES
-//
+/**
+ * ----------------------------------------------------------------------------
+ * THEMES
+ * ----------------------------------------------------------------------------
+ */
 $appThemes = getFolders("themes");
 asort($appThemes);
 
-//
-// JQUERY UI THEMES
-//
+/**
+ * ----------------------------------------------------------------------------
+ * JQUERY UI THEMES
+ * ----------------------------------------------------------------------------
+ */
 $appJqueryUIThemes = getFolders('js/jquery/ui/' . JQUERY_UI_VER . '/themes/');
 asort($appJqueryUIThemes);
 
-//
-// MOBILE COLUMNS
-// Number of day columns in the month display for mobile devices.
-// The controller will overwrite the value for 'full' which needs to be the
-// exact amount of days of the month displayed.
-//
-// $mobilecols = array (
-//    '240' => 3,
-//    '320' => 5,
-//    '360' => 6,
-//    '400' => 7,
-//    '480' => 9,
-//    '640' => 14,
-//    '800' => 17,
-//    '1024' => 25,
-//    'full' => 31
-// );
+/**
+ * ----------------------------------------------------------------------------
+ * MOBILE COLUMNS
+ * ----------------------------------------------------------------------------
+ *
+ * Number of day columns in the month display for mobile devices.
+ * The controller will overwrite the value for 'full' which needs to be the
+ * exact amount of days of the month displayed.
+ */
+//$mobilecols = array(
+//  '240' => 3,
+//  '320' => 5,
+//  '360' => 6,
+//  '400' => 7,
+//  '480' => 9,
+//  '640' => 14,
+//  '800' => 17,
+//  '1024' => 25,
+//  'full' => 31
+//);
 
-//
-// FONT AWESOME ICON NAMES 6.5.1
-//
+/**
+ * ----------------------------------------------------------------------------
+ * FONT AWESOME ICON NAMES 6.7.2
+ * ----------------------------------------------------------------------------
+ */
 $faIcons = array(
   'fa-brands fa-42-group',
   'fa-brands fa-500px',
@@ -139,6 +159,7 @@ $faIcons = array(
   'fa-brands fa-blackberry',
   'fa-brands fa-blogger-b',
   'fa-brands fa-blogger',
+  'fa-brands fa-bluesky',
   'fa-brands fa-bluetooth-b',
   'fa-brands fa-bluetooth',
   'fa-brands fa-bootstrap',
@@ -192,12 +213,14 @@ $faIcons = array(
   'fa-brands fa-creative-commons-zero',
   'fa-brands fa-creative-commons',
   'fa-brands fa-critical-role',
+  'fa-brands fa-css',
   'fa-brands fa-css3-alt',
   'fa-brands fa-css3',
   'fa-brands fa-cuttlefish',
   'fa-brands fa-d-and-d-beyond',
   'fa-brands fa-d-and-d',
   'fa-brands fa-dailymotion',
+  'fa-brands fa-dart-lang',
   'fa-brands fa-dashcube',
   'fa-brands fa-debian',
   'fa-brands fa-deezer',
@@ -240,6 +263,7 @@ $faIcons = array(
   'fa-brands fa-fedex',
   'fa-brands fa-fedora',
   'fa-brands fa-figma',
+  'fa-brands fa-files-pinwheel',
   'fa-brands fa-firefox-browser',
   'fa-brands fa-firefox',
   'fa-brands fa-first-order-alt',
@@ -247,6 +271,7 @@ $faIcons = array(
   'fa-brands fa-firstdraft',
   'fa-brands fa-flickr',
   'fa-brands fa-flipboard',
+  'fa-brands fa-flutter',
   'fa-brands fa-fly',
   'fa-brands fa-font-awesome',
   'fa-brands fa-fonticons-fi',
@@ -321,6 +346,7 @@ $faIcons = array(
   'fa-brands fa-joomla',
   'fa-brands fa-js',
   'fa-brands fa-jsfiddle',
+  'fa-brands fa-jxl',
   'fa-brands fa-kaggle',
   'fa-brands fa-keybase',
   'fa-brands fa-keycdn',
@@ -460,6 +486,7 @@ $faIcons = array(
   'fa-brands fa-speaker-deck',
   'fa-brands fa-spotify',
   'fa-brands fa-square-behance',
+  'fa-brands fa-square-bluesky',
   'fa-brands fa-square-dribbble',
   'fa-brands fa-square-facebook',
   'fa-brands fa-square-font-awesome-stroke',
@@ -482,8 +509,11 @@ $faIcons = array(
   'fa-brands fa-square-threads',
   'fa-brands fa-square-tumblr',
   'fa-brands fa-square-twitter',
+  'fa-brands fa-square-upwork',
   'fa-brands fa-square-viadeo',
   'fa-brands fa-square-vimeo',
+  'fa-brands fa-square-web-awesome-stroke',
+  'fa-brands fa-square-web-awesome',
   'fa-brands fa-square-whatsapp',
   'fa-brands fa-square-x-twitter',
   'fa-brands fa-square-xing',
@@ -549,6 +579,7 @@ $faIcons = array(
   'fa-brands fa-vuejs',
   'fa-brands fa-watchman-monitoring',
   'fa-brands fa-waze',
+  'fa-brands fa-web-awesome',
   'fa-brands fa-webflow',
   'fa-brands fa-weebly',
   'fa-brands fa-weibo',
@@ -581,7 +612,6 @@ $faIcons = array(
   'fa-brands fa-yoast',
   'fa-brands fa-youtube',
   'fa-brands fa-zhihu',
-
   'fa-regular fa-address-book',
   'fa-regular fa-address-card',
   'fa-regular fa-bell-slash',
@@ -745,7 +775,6 @@ $faIcons = array(
   'fa-regular fa-window-maximize',
   'fa-regular fa-window-minimize',
   'fa-regular fa-window-restore',
-
   'fa-solid fa-0',
   'fa-solid fa-1',
   'fa-solid fa-2',
@@ -763,7 +792,6 @@ $faIcons = array(
   'fa-solid fa-align-justify',
   'fa-solid fa-align-left',
   'fa-solid fa-align-right',
-  'fa-solid fa-ambulance',
   'fa-solid fa-anchor-circle-check',
   'fa-solid fa-anchor-circle-exclamation',
   'fa-solid fa-anchor-circle-xmark',
@@ -1005,6 +1033,7 @@ $faIcons = array(
   'fa-solid fa-chart-area',
   'fa-solid fa-chart-bar',
   'fa-solid fa-chart-column',
+  'fa-solid fa-chart-diagram',
   'fa-solid fa-chart-gantt',
   'fa-solid fa-chart-line',
   'fa-solid fa-chart-pie',
@@ -1098,6 +1127,7 @@ $faIcons = array(
   'fa-solid fa-comment-dollar',
   'fa-solid fa-comment-dots',
   'fa-solid fa-comment-medical',
+  'fa-solid fa-comment-nodes',
   'fa-solid fa-comment-slash',
   'fa-solid fa-comment-sms',
   'fa-solid fa-comment',
@@ -1260,6 +1290,8 @@ $faIcons = array(
   'fa-solid fa-file-csv',
   'fa-solid fa-file-excel',
   'fa-solid fa-file-export',
+  'fa-solid fa-file-fragment',
+  'fa-solid fa-file-half-dashed',
   'fa-solid fa-file-image',
   'fa-solid fa-file-import',
   'fa-solid fa-file-invoice-dollar',
@@ -1411,6 +1443,8 @@ $faIcons = array(
   'fa-solid fa-helicopter',
   'fa-solid fa-helmet-safety',
   'fa-solid fa-helmet-un',
+  'fa-solid fa-hexagon-nodes-bolt',
+  'fa-solid fa-hexagon-nodes',
   'fa-solid fa-highlighter',
   'fa-solid fa-hill-avalanche',
   'fa-solid fa-hill-rockslide',
@@ -1875,6 +1909,7 @@ $faIcons = array(
   'fa-solid fa-spray-can-sparkles',
   'fa-solid fa-spray-can',
   'fa-solid fa-square-arrow-up-right',
+  'fa-solid fa-square-binary',
   'fa-solid fa-square-caret-down',
   'fa-solid fa-square-caret-left',
   'fa-solid fa-square-caret-right',
@@ -1931,7 +1966,10 @@ $faIcons = array(
   'fa-solid fa-synagogue',
   'fa-solid fa-syringe',
   'fa-solid fa-t',
+  'fa-solid fa-table-cells-column-lock',
   'fa-solid fa-table-cells-large',
+  'fa-solid fa-table-cells-row-lock',
+  'fa-solid fa-table-cells-row-unlock',
   'fa-solid fa-table-cells',
   'fa-solid fa-table-columns',
   'fa-solid fa-table-list',
@@ -1973,6 +2011,7 @@ $faIcons = array(
   'fa-solid fa-thermometer',
   'fa-solid fa-thumbs-down',
   'fa-solid fa-thumbs-up',
+  'fa-solid fa-thumbtack-slash',
   'fa-solid fa-thumbtack',
   'fa-solid fa-ticket-simple',
   'fa-solid fa-ticket',
@@ -2111,6 +2150,7 @@ $faIcons = array(
   'fa-solid fa-water-ladder',
   'fa-solid fa-water',
   'fa-solid fa-wave-square',
+  'fa-solid fa-web-awesome',
   'fa-solid fa-weight-hanging',
   'fa-solid fa-weight-scale',
   'fa-solid fa-wheat-awn-circle-exclamation',

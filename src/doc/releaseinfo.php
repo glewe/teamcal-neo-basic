@@ -2,6 +2,42 @@
 $releases = [
   //---------------------------------------------------------------------------
   [
+    'version' => '4.1.0',
+    'date' => '2025-01-08',
+    'info' => '',
+    'bugfixes' => [
+      [ 'summary' => 'Added missing vendor folder to distribution package', 'issue' => 'https://github.com/glewe/teamcal-basic/issues/1' ],
+    ],
+    'features' => [
+    ],
+    'improvements' => [
+      [ 'summary' => 'Update Chart.js 4.4.3 => 4.4.7', 'issue' => '' ],
+      [ 'summary' => 'Update Datatables 2.1.2 => 2.2.0', 'issue' => '' ],
+      [ 'summary' => 'Update FontAwesome 6.5.1 => 6.7.2', 'issue' => '' ],
+      [ 'summary' => 'Update jQuery 3.6.1 => 3.7.1', 'issue' => '' ],
+      [ 'summary' => 'Update jQuery UI 1.13.2 => 1.14.1', 'issue' => '' ],
+      [ 'summary' => 'Update Magnific Popup 1.1.0 => 1.2.0', 'issue' => '' ],
+    ],
+    'removals' => [
+    ],
+  ],
+  //---------------------------------------------------------------------------
+  [
+    'version' => '4.0.2',
+    'date' => '2024-11-29',
+    'info' => '',
+    'bugfixes' => [
+    ],
+    'features' => [
+      [ 'summary' => 'Allow cookies over HTTP', 'issue' => '' ],
+    ],
+    'improvements' => [
+    ],
+    'removals' => [
+    ],
+  ],
+  //---------------------------------------------------------------------------
+  [
     'version' => '4.0.1',
     'date' => '2024-11-11',
     'info' => '',

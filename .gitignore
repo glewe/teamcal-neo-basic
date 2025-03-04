@@ -6,7 +6,7 @@
 /.settings
 /.vscode
 /_*
-/vendor/
+vendor/
 build.cmd
 installation.org.php
 sonar-project.properties

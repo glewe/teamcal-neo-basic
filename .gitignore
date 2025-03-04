@@ -1,5 +1,3 @@
-!src/vendor/
-
 /.idea
 /.project
 /.gitignore
@@ -12,3 +10,5 @@
 build.cmd
 installation.org.php
 sonar-project.properties
+
+!src/vendor/

@@ -13,13 +13,10 @@ if (!defined('VALID_ROOT')) {
  * @since 3.0.0
  */
 
-use RobThree\Auth\TwoFactorAuth;
-
 //=============================================================================
 //
 // LOAD CONTROLLER RESOURCES
 //
-$tfa = new TwoFactorAuth('TeamCal Neo');
 
 //=============================================================================
 //

@@ -373,6 +373,10 @@ if (!empty($_POST)) {
         $UO->save($profile, 'custom5', $_POST['txt_custom5']);
       }
       //
+      // Update user record with the new values
+      //
+      $UP->update($profile);
+      //
       // Send notification e-mails to the subscribers of user events
       //
       if ($C->read("emailNotifications")) {

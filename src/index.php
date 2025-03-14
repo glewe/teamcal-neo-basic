@@ -11,10 +11,18 @@
  * @since 3.0.0
  */
 
-// Set error_reporting to 0 in production environments.
-// Set it to E_ALL if you want to show PHP errors in your browser during runtime.
-error_reporting(0);
-//error_reporting(E_ALL);
+//-----------------------------------------------------------------------------
+// Set PRODUCTION_MODE to true to suppress PHP errors and warnings.
+// Set to false for development and debugging.
+//
+define('PRODUCTION_MODE', true);
+if (PRODUCTION_MODE) {
+  error_reporting(0);
+  ini_set('display_errors', 0);
+} else {
+  error_reporting(E_ALL);
+  ini_set('display_errors', 1);
+}
 
 //=============================================================================
 //

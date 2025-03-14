@@ -56,7 +56,7 @@ define('DATATABLES_VER', "2.2.0");
 define('FONTAWESOME_VER', "6.7.2");
 define('JQUERY_VER', "3.7.1");
 define('JQUERY_UI_VER', "1.14.1");
-define('SECUREIMAGE_VER', "3.6.4");
+define('SECUREIMAGE_VER', "3.6.8");
 
 /**
  * ----------------------------------------------------------------------------
@@ -116,8 +116,8 @@ $CONF['uplMaxsize'] = 2048 * 1024; // 2 MB
  * !Do not change anything below this line. It is protected by the license agreement!
  */
 define('APP_NAME', "TeamCal Neo Basic");
-define('APP_VER', "4.1.1");
-define('APP_DATE', "2025-03-04");
+define('APP_VER', "4.2.0");
+define('APP_DATE', "2025-03-14");
 define('APP_YEAR', "2014-" . date('Y'));
 define('APP_AUTHOR', "George Lewe");
 define('APP_URL', "https://www.lewe.com");

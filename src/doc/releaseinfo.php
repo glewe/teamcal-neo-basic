@@ -2,6 +2,23 @@
 $releases = [
   //---------------------------------------------------------------------------
   [
+    'version' => '4.2.0',
+    'date' => '2025-03-14',
+    'info' => '',
+    'bugfixes' => [
+      [ 'summary' => 'Fixed profile save bug', 'issue' => 'https://github.com/glewe/teamcal-neo-basic/issues/3' ],
+    ],
+    'features' => [
+    ],
+    'improvements' => [
+      [ 'summary' => 'Update Securimage 3.6.4 => 3.6.8 (incl. PHP 8.4 patches)', 'issue' => '' ],
+      [ 'summary' => 'Production mode flag in index.php for easier debugging', 'issue' => '' ],
+    ],
+    'removals' => [
+    ],
+  ],
+  //---------------------------------------------------------------------------
+  [
     'version' => '4.1.1',
     'date' => '2025-03-04',
     'info' => '',

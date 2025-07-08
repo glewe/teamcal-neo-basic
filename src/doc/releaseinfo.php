@@ -2,6 +2,21 @@
 $releases = [
   //---------------------------------------------------------------------------
   [
+    'version' => '4.2.1',
+    'date' => '2025-07-08',
+    'info' => '',
+    'bugfixes' => [
+      [ 'summary' => 'Fixed logout bug', 'issue' => 'https://github.com/glewe/teamcal-neo-basic/issues/4' ],
+    ],
+    'features' => [
+    ],
+    'improvements' => [
+    ],
+    'removals' => [
+    ],
+  ],
+  //---------------------------------------------------------------------------
+  [
     'version' => '4.2.0',
     'date' => '2025-03-14',
     'info' => '',

@@ -339,6 +339,6 @@ class Login {
    * Clears the login cookie
    */
   public function logout() {
-    setcookie($this->cookie_name, '', time() - 3600, '', $this->hostName, true, true);
+    setcookie($this->cookie_name, '', time() - 3600, '', $this->hostName, false, true);
   }
 }
